@@ -1,0 +1,9 @@
+name: QuantographEnv
+dependencies:
+- python=3
+- pip
+- notebook
+- pip:
+    - qiskit
+    - apng
+    - PIL
