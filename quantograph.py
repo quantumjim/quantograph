@@ -1,13 +1,19 @@
 try:
     from qiskit import *
 except:
-    pip.main(['install',qiskit])
+    agree = input("Do you want to install the required package 'qiskit'? (y/n)\n")=='y'
+    if agree:
+        from pip._internal import main
+        main(['install','qiskit'])
     from qiskit import *
     
 try:
     from apng import APNG
 except:
-    pip.main(['install',apng])
+    agree = input("Do you want to install the required package 'apng' (y/n)\n")=='y'
+    if agree:
+        from pip._internal import main
+        main(['install','apng'])
     from apng import APNG
 
 from PIL import Image
@@ -141,7 +147,7 @@ def renderer(box):
                 qc.ry(2*np.pi*fraction[j][qubit]*f/frame_num,q[qubit])
             circuits.append( qc )
 
-        job = execute(circuits, backend)
+        job = execute(circuits, backend, shots=1)
 
         counts = []
         for j in range(3):
