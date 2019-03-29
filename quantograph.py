@@ -1,20 +1,5 @@
-try:
-    from qiskit import *
-except:
-    agree = input("Do you want to install the required package 'qiskit'? (y/n)\n")=='y'
-    if agree:
-        from pip._internal import main
-        main(['install','qiskit'])
-    from qiskit import *
-    
-try:
-    from apng import APNG
-except:
-    agree = input("Do you want to install the required package 'apng' (y/n)\n")=='y'
-    if agree:
-        from pip._internal import main
-        main(['install','apng'])
-    from apng import APNG
+from qiskit import *
+from apng import APNG
 
 from PIL import Image
 from IPython.display import display
