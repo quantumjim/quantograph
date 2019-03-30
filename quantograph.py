@@ -171,7 +171,7 @@ def renderer(box):
     bar.close()
 
     t = time.localtime()
-    animation = 'outputs/'+box.children[0].value+'_'+str(t.tm_year)+'_'+str(t.tm_mon)+'_'+str(t.tm_mday)+'@'+str(t.tm_hour)+':'+str(t.tm_min)+':'+str(t.tm_sec)+'.png'
+    animation = 'outputs/'+box.children[0].value.replace(' ','_')+'_'+str(t.tm_year)+'_'+str(t.tm_mon)+'_'+str(t.tm_mday)+'@'+str(t.tm_hour)+':'+str(t.tm_min)+':'+str(t.tm_sec)+'.png'
     
     APNG.from_files(filenames,delay=250).save( animation )
     
