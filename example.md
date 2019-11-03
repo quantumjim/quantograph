@@ -5,6 +5,10 @@
 ![](outputs/green2white.png)
 ![](outputs/white2green.png)
 
+## Transitioning between the runes of Aedwen's brooch
+
+![](outputs/combined_runes.png)
+
 ## Beaming out a plumber, and beaming in a flower
 
 ### Method A
