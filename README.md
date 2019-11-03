@@ -10,3 +10,5 @@ A tutorial on how it works can be found [here](https://github.com/Qiskit/qiskit-
 Made as part of [Pyweek 27](https://pyweek.org/27/)
 
 ![](outputs/Plumber_2019_3_29%4013:35:2.png)
+
+Also see the related [teleportation](teleport.ipynb) notebook, in which the same principles are used to create transitions between images using swap gates.
